@@ -14724,7 +14724,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>/home/ikacikac/workspace/dss03python2023/session06
-[&#39;dss03_py_session06_b.ipynb&#39;, &#39;_img&#39;, &#39;dss03_py_session06.ipynb&#39;, &#39;_data&#39;]
+[&#39;dss03_py_session06_b.ipynb&#39;, &#39;_img&#39;, &#39;dss03_py_session06.html&#39;, &#39;dss03_py_session06.ipynb&#39;, &#39;_data&#39;]
 </pre>
 </div>
 </div>
@@ -16199,19 +16199,6 @@ memory usage: 54.3 MB
 <li><code>year</code>, <code>month</code>, <code>day</code>, <code>hour</code> and <code>minute</code> are surely integers, but there is hardly any point in doing arithmetic operations with them. These are not categorical too. Maybe we can observe them as ordinal type variables?</li>
 <li><code>sched_dep_time</code> and <code>sched_arr_time</code> have specific format i.e. HHMM or HMM, and are not to be viewed as integers. Very specific format, we have to deal with this somehow.</li>
 <li><code>flight</code> is the number of flight. This should be nominal (categorical) variable or just string.</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-<div  class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<ul>
 <li><code>dep_delay</code> is the delay in minutes. We can use this as is.</li>
 <li><code>air_time</code> is, as the name says, airplane air time, in minutes.</li>
 <li><code>dep_time</code> and <code>arr_time</code> are of same format as <code>sched_dep_time</code> and <code>sched_arr_time</code>. We have to deal with these properly.</li>
@@ -17459,7 +17446,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>/tmp/ipykernel_171625/83080198.py:2: RuntimeWarning: divide by zero encountered in log
+<pre>/tmp/ipykernel_172906/83080198.py:2: RuntimeWarning: divide by zero encountered in log
   ax.plot(x, np.log(x))
 </pre>
 </div>
