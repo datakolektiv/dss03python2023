@@ -14259,6 +14259,34 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="DATA-SCIENCE-SESSIONS-VOL.-3">DATA SCIENCE SESSIONS VOL. 3<a class="anchor-link" href="#DATA-SCIENCE-SESSIONS-VOL.-3">&#182;</a></h1><h3 id="A-Foundational-Python-Data-Science-Course">A Foundational Python Data Science Course<a class="anchor-link" href="#A-Foundational-Python-Data-Science-Course">&#182;</a></h3><h2 id="Session-09:-Intro-to-Probability-Theory.-Continuous-Distribution.-$\chi^2$-test.">Session 09: Intro to Probability Theory. Continuous Distribution. $\chi^2$ test.<a class="anchor-link" href="#Session-09:-Intro-to-Probability-Theory.-Continuous-Distribution.-$\chi^2$-test.">&#182;</a></h2><p><a href="https://datakolektiv.com/">&larr; Back to course webpage</a></p>
+<p>Feedback should be send to <a href="mailto:goran.milovanovic@datakolektiv.com">goran.milovanovic@datakolektiv.com</a>.</p>
+<p>These notebooks accompany the DATA SCIENCE SESSIONS VOL. 3 :: A Foundational Python Data Science Course.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Lecturers">Lecturers<a class="anchor-link" href="#Lecturers">&#182;</a></h3><p><a href="https://www.linkedin.com/in/gmilovanovic/">Goran S. Milovanović, PhD, DataKolektiv, Chief Scientist &amp; Owner</a></p>
+<p><a href="https://www.linkedin.com/in/alegzndr/">Aleksandar Cvetković, PhD, DataKolektiv, Consultant</a></p>
+<p><a href="https://www.linkedin.com/in/ilijalazarevic/">Ilija Lazarević, MA, DataKolektiv, Consultant</a></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="../img/DK_Logo_100.png" alt=""></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="1.-Continuous-type-Random-Variable">1. Continuous-type Random Variable<a class="anchor-link" href="#1.-Continuous-type-Random-Variable">&#182;</a></h2>
 </div>
 </div>
@@ -14270,14 +14298,19 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>As with discrete-type RVs, continuous-type RVs have their distribution. With discrete RVs we use probability mass function (p.m.f) to describe their distribution. With continuous RVs, we have <em>probability density function (p.d.f)</em> which 'describes' them. One p.d.f. $\varphi(x)$ of a coninuous random variable may look like this:</p>
-<p><strong>UBACI SLIKU</strong></p>
+<p>As with discrete-type RVs, continuous-type RVs have their distribution. With discrete RVs we use probability mass function (p.m.f) to describe their distribution. With continuous RVs, we have <em>probability density function (p.d.f)</em> which 'describes' them. One p.d.f. $\varphi(x)$ of a continuous random variable may look like this:</p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Each p.d.f of a continuous RV should be defined, continuous and non-negative on the whole real-number line, and:</p>
+<p><img src="pdf.jpg" alt=""></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Each p.d.f of a continuous RV should be defined, continuous and non-negative almost everywhere on the whole real-number line, and:</p>
 $$\int_{-\infty}^{+\infty}\varphi(x)dx = 1.$$
 </div>
 </div>
@@ -14285,7 +14318,7 @@ $$\int_{-\infty}^{+\infty}\varphi(x)dx = 1.$$
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Don't worry about the integral - we are not going to compute integrals in this course. But we do need them to calculate probabilities for continuous RVs. The integral above tells us that the area under the curve of p.d.f. is always equal to 1. This seems familiar? This is actually completely analogous to the fact that, for discrete RV, all probabilities in its p.m.f. need always to sum to 1.</p>
 <p>So, what's the probability of RV, having p.d.f as in the figure above, to take value -5.5? It's</p>
-$$P(X = -5.5) = 0.$$<p>OK, that kinda makes sense. But, what about the probability of taking value 0?</p>
+$$P(X = -0.5) = 0.$$<p>OK, that kinda makes sense. But, what about the probability of taking value 0?</p>
 $$P(X = 0) = 0.$$<p>Wait, what? And taking value $\sqrt{2}$?</p>
 $$P(X = \sqrt{2}) = 0.$$<p>Is it always going to be zero? Yes. Because the probability of hitting a point exactly you want, out of uncountably infinitely many others is - of course, zero. But how we can calculate probabilities at all, if the probability of every point is zero? We just need to broaden our views - not to ask about the probability of hitting a single point $x$ among ridiculously infinitely many, but to ask about the probability of hitting any point in the small interval $\Delta x$ which contains $x$... and uncountably infinite many other points. When working with continuous RVs we can hope to get positive probability only if we work with intervals, no matter how big or small.</p>
 
@@ -14345,7 +14378,12 @@ $$F(a) = P(X\leqslant a) = \int_{-\infty}^a\varphi(x)dx.$$
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>C.d.f of a continuous RV $X$ gives the probability of $X$ taking any value from the interval $(-\infty, a]$. Or, area under the p.d.f curve on that interval. Here's how one c.d.f. of a continuous RV looks like:</p>
-<p><strong>UBACI SLIKU</strong></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="cdf.png" alt=""></p>
 
 </div>
 </div>
@@ -14828,26 +14866,26 @@ $$x = Q(0.75) = 0 + 0.75\cdot 1 = 0.75,$$<p>which is also an expected answer, gi
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([ 0.19186552, -0.46685169,  2.20024603,  2.57482426, -0.62438617,
-        1.62350436, -0.91481759,  0.66637962,  2.76702304, -0.98448177,
-        1.00600182,  1.61884276,  1.33869489,  2.14427009, -0.7303674 ,
-        0.75727587,  1.04118562,  0.64884492, -1.01887676,  1.8809462 ,
-        1.45156478, -0.66235174,  1.91255349,  2.13590996,  2.62347598,
-       -0.3830177 , -0.72666457,  1.1921288 , -0.03433224,  0.07405255,
-        1.36065433,  0.1548189 ,  1.27310535, -0.53627917,  1.70684509,
-        3.0466969 , -0.60379607,  1.22273972,  1.02609667,  2.35735492,
-        2.56475772, -1.06038907,  0.15857013,  1.91765622,  2.55227084,
-        0.91029556,  0.63528973, -0.23815453, -0.2748147 ,  1.50231675,
-        1.93591095, -0.87601994,  2.54125659,  2.052421  ,  1.8989276 ,
-       -0.84080485,  2.02804905,  0.28381586,  2.21316087,  1.64756009,
-        1.5872623 ,  0.71740326,  2.53975417,  1.38869814,  2.2186971 ,
-       -0.41378878, -0.14406873,  1.98687928,  1.57990712,  2.15237299,
-        1.38585755,  1.40010441,  0.92836663,  0.23393396,  1.5204286 ,
-        0.04146601,  1.98218134, -1.0948779 , -0.00490771,  2.96316874,
-       -1.0514299 , -1.09099811, -0.43568156, -0.20564398,  0.88434528,
-        1.97242178,  2.07988833,  1.28046156,  2.42929605,  2.24250516,
-        1.27666142,  0.87643239, -0.93539145,  0.98618864,  2.89004481,
-        0.73597619,  0.24581781,  0.95405253, -0.54885983,  1.96116152])</pre>
+<pre>array([ 0.80402866,  0.47186747,  2.8845895 , -0.66957135, -0.0481022 ,
+        2.95899673, -1.09365981,  1.94244352,  0.61707799, -0.64381875,
+       -0.13057581,  0.82961671,  2.48385466,  0.46509258,  0.46733427,
+        2.67881038,  1.79873589, -0.67084116,  0.27402691, -0.3828456 ,
+        0.67990267,  1.66696961,  0.63633556, -0.47597561,  2.99723642,
+        2.73645417,  1.43776974,  2.67831528, -0.41764067,  1.82746425,
+        2.9263208 ,  1.93711105,  1.21458711,  1.36743519,  2.46407588,
+        2.07902019,  1.52564669,  0.40132439, -0.91954695,  1.01024094,
+        1.19427918,  1.78521984,  2.07777342,  0.99443064,  1.76683226,
+        0.98462195,  2.24163826,  2.85027183,  1.29184797, -0.73542548,
+        3.09383715, -0.25723306,  1.089857  ,  1.44720112,  2.51650906,
+       -0.34235702,  1.12153041,  0.18041298,  0.47401899,  1.27189377,
+        1.42313284,  2.87472894,  0.50950295,  0.80358919,  0.00630619,
+        1.69210972,  0.42396281, -0.13423744,  2.92299149, -0.35261146,
+       -0.64508719,  1.40536677,  0.5675215 ,  2.26309966, -0.18773959,
+        0.12894592,  1.74744224,  2.65140529,  1.5118227 ,  3.13350111,
+        1.77931965, -0.75105943, -0.18835942,  1.13708916,  0.97078867,
+        2.63106923,  2.54356404,  1.87037927,  0.77000311,  3.1405934 ,
+        1.64239637, -0.18140562,  2.0903994 ,  0.40940217,  1.41710511,
+        2.55988829, -0.85945306, -0.96768591,  0.69241281,  2.61015229])</pre>
 </div>
 
 </div>
@@ -15379,31 +15417,31 @@ $$$$\$$$$Q(p;\beta) = -\beta\ln(1 - p).$$
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([7.95995686e-01, 1.55960211e-01, 4.10266197e-02, 3.79121426e-02,
-       6.14918035e-01, 5.63374403e-01, 1.52108405e-01, 1.06639144e-01,
-       4.26702573e-01, 9.08670678e-02, 5.55846030e-01, 4.36739946e-04,
-       9.16376199e-01, 4.97516893e-01, 4.27092973e-01, 6.80104941e-04,
-       1.63849475e-01, 9.77122649e-02, 1.35749251e-01, 5.66378171e-01,
-       4.43887166e-01, 5.75295835e-02, 1.18767922e+00, 3.83845483e-01,
-       3.12403737e-02, 5.80941563e-01, 4.21368555e-01, 8.71702304e-01,
-       3.51403020e-01, 1.51201107e-01, 4.18468781e-01, 1.47257926e-01,
-       1.64537142e+00, 4.85525534e-02, 1.82978645e-01, 8.51655476e-01,
-       3.56463405e-01, 4.66551294e-01, 6.01782938e-01, 8.48077029e-02,
-       8.43596935e-02, 4.93189125e-01, 5.32047624e-01, 4.23229243e-01,
-       6.48386123e-01, 1.74149179e-01, 2.92811017e-01, 1.47496042e-01,
-       4.35930167e-01, 1.05972921e-01, 5.28326104e-01, 2.98569809e-01,
-       2.42580525e-01, 3.50084598e-02, 2.17165953e-01, 4.25877868e-01,
-       4.00420457e-01, 2.43716666e-01, 4.96597691e-02, 7.65854091e-01,
-       4.30715024e-02, 3.73870360e-02, 3.87091544e-01, 2.26350112e-01,
-       7.45376655e-03, 6.80010643e-02, 4.02036211e-02, 8.08401619e-02,
-       1.58905313e-01, 1.44465362e-02, 2.34994013e-01, 5.47471937e-03,
-       4.50110655e-02, 2.31108621e-01, 3.17724680e-01, 7.19434958e-02,
-       1.11421005e-01, 2.07342758e-01, 4.73878671e-01, 7.42229714e-01,
-       1.42638165e-02, 6.86039440e-01, 1.68984243e-01, 4.80326577e-02,
-       2.29798863e-01, 2.74310644e-01, 4.44549070e-01, 7.61986288e-02,
-       9.88811776e-02, 5.63981495e-01, 3.33892330e-01, 1.06446727e-02,
-       1.44828220e-01, 1.02226808e-02, 1.21822329e-01, 4.50984578e-01,
-       7.36688690e-02, 4.02316941e-01, 4.51208172e-01, 1.68582020e-01])</pre>
+<pre>array([3.45045781e-02, 8.35072952e-01, 2.09646906e-01, 3.59104129e-01,
+       2.67453790e-01, 5.00078630e-01, 2.87490596e-01, 9.45769418e-01,
+       8.57420977e-01, 8.43878972e-02, 2.25239117e-01, 2.03156424e-01,
+       3.76429790e-01, 1.07594088e-01, 3.81574713e-02, 3.59978913e-01,
+       7.69385854e-01, 9.81858152e-01, 3.42070257e-01, 2.50564113e-01,
+       1.45241297e-01, 1.11711891e-01, 7.57074322e-01, 3.43022713e-01,
+       2.23662654e-01, 8.03976176e-01, 1.62503978e-01, 3.28862320e-01,
+       1.53169407e-01, 4.48329907e-02, 1.69055689e-02, 3.56865758e-01,
+       1.32003294e-01, 8.84234072e-02, 5.34038554e-02, 3.60074157e-01,
+       5.15242362e-02, 8.93150851e-01, 1.19887853e-01, 7.64847803e-02,
+       4.20197599e-04, 3.32746371e-01, 1.18603884e-01, 3.44969436e-01,
+       5.60884675e-01, 3.03847465e-02, 6.51686632e-02, 1.58938300e-01,
+       4.88850696e-02, 1.10217977e+00, 8.65597490e-02, 8.73739609e-02,
+       1.34438175e-01, 1.15994870e+00, 4.22870659e-01, 2.50034161e-01,
+       6.09689894e-01, 2.92745867e-01, 5.08823983e-02, 1.87780879e-01,
+       5.66808777e-01, 2.17989020e-01, 1.04512462e+00, 3.17298435e-02,
+       1.21237920e+00, 1.09407583e+00, 3.18458011e-02, 1.47811619e-01,
+       1.38635040e-01, 2.51909757e-01, 1.99406017e-01, 3.24265751e-01,
+       8.10982325e-02, 6.56008425e-01, 6.04648536e-01, 1.19067605e-01,
+       8.87379506e-02, 7.07222866e-02, 1.79626861e-01, 4.59178517e-01,
+       4.75789794e-01, 1.01736640e-01, 6.18884297e-01, 3.33313959e-02,
+       3.22932916e-01, 1.24389830e-01, 4.83378725e-01, 4.39071340e-02,
+       1.32758304e-01, 2.45775887e-01, 3.96657786e-02, 3.74273587e-01,
+       9.81452669e-02, 2.26168823e-01, 3.12337448e-01, 5.92005078e-02,
+       1.23747742e+00, 8.13096419e-02, 2.76694449e-01, 2.56822628e-01])</pre>
 </div>
 
 </div>
@@ -16963,20 +17001,27 @@ $$p = P(X\geqslant 0.4133) = 1 - P(X &lt; 0.4133) = 1 - F(0.4133).$$<p>To find t
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Further-Reading:">Further Reading:<a class="anchor-link" href="#Further-Reading:">&#182;</a></h3><p><a href="https://www.khanacademy.org/math/statistics-probability/probability-library">https://www.khanacademy.org/math/statistics-probability/probability-library</a></p>
+<p><a href="https://www.khanacademy.org/math/statistics-probability/random-variables-stats-library">Random variables | Statistics and probability | Math | Khan Academy</a></p>
 
-     </div>
 </div>
 </div>
-</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>DataKolektiv, 2022/23.</p>
+<p><a href="mailto:goran.milovanovic@datakolektiv.com">hello@datakolektiv.com</a></p>
+<p><img src="../img/DK_Logo_100.png" alt=""></p>
 
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><font size=1>License: [GPLv3](https://www.gnu.org/licenses/gpl-3.0.txt) This Notebook is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This Notebook is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this Notebook. If not, see http://www.gnu.org/licenses/.</font></p>
+
+</div>
 </div>
 </body>
 
