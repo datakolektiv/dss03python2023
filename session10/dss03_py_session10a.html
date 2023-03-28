@@ -14737,17 +14737,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li>Click on the <em>Windows</em> button and type 'maria'. You should be presented with a couple of options related to the newly installed MariaDB.</li>
 <li>Run <strong>Command Prompt (MariaDB 10.11 (x64))</strong>.</li>
 <li>Once you have your command prompt opened, navigate to this session's <code>_data</code> folder. Remember, <code>cd</code> command is for switching directories, <code>cd ..</code> is for &quot;moving&quot; to the parent directory.</li>
-<li>Now that you are in the <code>session10/_data</code> folder, run <code>dir</code> and make sure you have 3 files with <em>sql</em> extension.</li>
-<li>The following <code>.sql</code> files should be found there: <code>create_tables.sql</code>, <code>drop_tables.sql</code>, <code>setup_database.sql</code>.</li>
-<li>We will first &quot;set up&quot; the database, user, and user privileges by running the following command: <code>mysql --username=root --password=datakolektiv111 &lt; setup_database.sql</code>.</li>
+<li>Now that you are in the <code>session10/_data</code> folder, run <code>dir</code> and make sure you have 4 files with <em>sql</em> extension.</li>
+<li>The following <code>.sql</code> files should be found there: <code>create_database.sql</code>, <code>create_tables.sql</code>, <code>drop_database.sql</code>, <code>drop_tables.sql</code>.</li>
+<li>We will first &quot;set up&quot; the database, user, and user privileges by running the following command: <code>mysql --username=root --password=datakolektiv111 &lt; create_database.sql</code>.</li>
 <li>After we have our database and user in place, run the command: <code>mysql --user=datakolektiv --password=datakolektiv123 &lt; create_tables.sql</code>.</li>
 <li>Now you are ready to go straight to Section 2.</li>
 </ul>
 <h4 id="1.2-MacOS-setup:">1.2 MacOS setup:<a class="anchor-link" href="#1.2-MacOS-setup:">&#182;</a></h4><ul>
 <li>In your terminal, navigate to the <code>session10/_data</code> directory in the directory where the course repository is found.</li>
-<li>Now that you are in the <code>session10/_data</code> folder, run <code>ls</code> and make sure you have 3 files with <em>sql</em> extension.</li>
-<li>The following <code>.sql</code> files should be found there: <code>create_tables.sql</code>, <code>drop_tables.sql</code>, <code>setup_database.sql</code>.</li>
-<li>We will first &quot;set up&quot; the database, user, and user privileges by running command: <code>sudo mysql --user=root &lt; setup_database.sql</code>.</li>
+<li>Now that you are in the <code>session10/_data</code> folder, run <code>ls</code> and make sure you have 4 files with <em>sql</em> extension.</li>
+<li>The following <code>.sql</code> files should be found there: <code>create_database.sql</code>, <code>create_tables.sql</code>, <code>drop_database.sql</code>, <code>drop_tables.sql</code>.</li>
+<li>We will first &quot;set up&quot; the database, user, and user privileges by running command: <code>sudo mysql --user=root &lt; create_database.sql</code>.</li>
 <li>After we have our database and user in place, run command: <code>mysql --user=datakolektiv --password=datakolektiv123 &lt; create_tables.sql</code>.</li>
 <li>Now you are ready to go straight to the Section 2.</li>
 </ul>
@@ -14755,9 +14755,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <ul>
 <li>Open terminal.</li>
 <li>Once you have your terminal opened, navigate to this session's <code>_data</code> folder. Remember, <code>cd</code> command is for switching directories, <code>cd ..</code> is for &quot;moving&quot; to the parent directory.</li>
-<li>Now that you are in the <code>session10/_data</code> folder, run <code>ls</code> and make sure you have 3 files with <em>sql</em> extension.</li>
-<li>The following <code>.sql</code> files should be found there: <code>create_tables.sql</code>, <code>drop_tables.sql</code>, <code>setup_database.sql</code>.</li>
-<li>We will first &quot;set up&quot; the database, user, and user privileges by running command: <code>sudo mysql --user=root &lt; setup_database.sql</code>.</li>
+<li>Now that you are in the <code>session10/_data</code> folder, run <code>ls</code> and make sure you have 4 files with <em>sql</em> extension.</li>
+<li>The following <code>.sql</code> files should be found there: <code>create_database.sql</code>, <code>create_tables.sql</code>, <code>drop_database.sql</code>, <code>drop_tables.sql</code>.</li>
+<li>We will first &quot;set up&quot; the database, user, and user privileges by running command: <code>sudo mysql --user=root &lt; create_database.sql</code>.</li>
 <li>After we have our database and user in place, run command: <code>mysql --user=datakolektiv --password=datakolektiv123 &lt; create_tables.sql</code>.</li>
 <li>Now you are ready to go straight to the Section 2.</li>
 </ul>
@@ -14878,7 +14878,8 @@ Inserting data from airlines.csv
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;_data/flights.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># populate indexed flights table</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;_data/flights.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s1">&#39;flights_i&#39;</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s1">&#39;append&#39;</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="mi">10_000</span><span class="p">)</span>
 </pre></div>
 
@@ -14918,7 +14919,8 @@ Inserting data from airlines.csv
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;_data/airports.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># populate indexed airports table</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;_data/airports.csv&#39;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">to_sql</span><span class="p">(</span><span class="s1">&#39;airports_i&#39;</span><span class="p">,</span> <span class="n">con</span><span class="o">=</span><span class="n">engine</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">if_exists</span><span class="o">=</span><span class="s1">&#39;append&#39;</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="mi">10_000</span><span class="p">)</span>
 </pre></div>
 
