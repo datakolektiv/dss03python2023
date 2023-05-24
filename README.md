@@ -38,7 +38,7 @@ Join us on this exhilarating journey into the world of Data Science with Python,
 
 **matplotlib**: matplotlib is a popular plotting library in Python, enabling the creation of high-quality, customizable visualizations for data exploration and presentation, making it an invaluable tool for communicating insights and patterns in data.
 
-seab**orn: seaborn is a powerful data visualization library built on top of matplotlib, offering a higher-level interface and a variety of statistical visualizations, allowing for the creation of attractive and informative plots with minimal effort.
+**seaborn**: seaborn is a powerful data visualization library built on top of matplotlib, offering a higher-level interface and a variety of statistical visualizations, allowing for the creation of attractive and informative plots with minimal effort.
 
 **plotly**: plotly is an interactive and dynamic visualization library for Python, providing a wide range of chart types and interactive features, enabling the creation of engaging and interactive visualizations that can be shared and explored in web-based environments.
 
