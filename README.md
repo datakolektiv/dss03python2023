@@ -47,14 +47,18 @@ seab**orn: seaborn is a powerful data visualization library built on top of matp
 ## Lecturers
 
 ![](/img/goran_milovanovic_introMLpython.jpg)
+
 [Goran S. Milovanović, Phd.](https://www.linkedin.com/in/gmilovanovic/)\
 He studied mathematics, philosophy, and psychology at the University of Belgrade and New York University (NYU), where he obtained a doctorate in psychology. A programmer since the age of ten, he published his first scientific paper at the age of twenty, collaborated with top cognitive scientists, and had papers cited in Stevens' Handbook of Experimental Psychology. With several years of experience in analytics and machine learning on some of the world's largest data systems (Wikidata), he served on the program committees of European conferences in Data Science. As an independent consultant, in collaboration with American educational startups and DataKolektiv, he has trained dozens of individuals for work in Data Science and ML.
 
 
 ![](/img/aleksandar_cvetkovic_introMLpython.jpg)
+
 [Aleksandar Cvetković, Phd.](https://www.linkedin.com/in/alegzndr/) He completed his doctoral studies in applied mathematics in Italy (GSSI - L'Aquila, SISSA - Trieste), conducting scientific research in the field of control and optimization. He is the author and co-author of several scientific papers published in leading international journals. With years of experience in the ML industry and education, focusing on machine learning, 3D computer vision, graph neural networks, and accelerating ML algorithms on hardware, he is currently working in the gaming industry.
 
-![Ilija Lazarevic, MSc.](https://www.linkedin.com/in/ilijalazarevic/) He completed his master's studies in computer science at the University of Kragujevac and was involved in teaching the subject of Operating Systems and Computer Networks. With years of experience as a software engineer and machine learning engineer, he specializes in (a) automatic pricing assessment in the real estate domain in the international market and (b) developing recommendation systems in the domain of casino games.
+![](/img/IlijaLazarevic175px.jpg)
+
+[Ilija Lazarevic, MSc.](https://www.linkedin.com/in/ilijalazarevic/) He completed his master's studies in computer science at the University of Kragujevac and was involved in teaching the subject of Operating Systems and Computer Networks. With years of experience as a software engineer and machine learning engineer, he specializes in (a) automatic pricing assessment in the real estate domain in the international market and (b) developing recommendation systems in the domain of casino games.
 
 ## Curriculum
 
