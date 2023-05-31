@@ -218,3 +218,17 @@ He studied mathematics, philosophy, and psychology at the University of Belgrade
     - Gini impurity
     - Gini gain
     - Regression and reduction of variance
+
+21. **Session 21. Decision Trees regularization and cost complexity prunning**
+    - Decision trees regularization
+    - Pre-prunning
+    - Post-prunning
+    - Feature importance
+
+22. **Session 22. Random Forest classification and regression**
+    - Random Forests: the algorithm
+    - Boostrap aggregating - bagging
+    - Out of bag (OOB) error 
+    - Feature bagging
+    - Random forests classification
+    - Random forests regression
