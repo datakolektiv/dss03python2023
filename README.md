@@ -2,7 +2,7 @@
 
 This code repository encompasses the material (data sets, notebooks, labs, task lists) for DataKolektiv's DATA SCIENCE SESSIONS VOL. 03 :: A Foundational Python Course in Data Science.  
 
-![](img/dss03python2023_banner500px.png)
+![](img/dss_vol05_python2023_500px.png)
 
 ## About the course
 
